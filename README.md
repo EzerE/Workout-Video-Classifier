@@ -6,7 +6,7 @@ A deep learning classifier that automatically identifies 22 different workout ex
 
 ![Number of Videos per Exercise](/images/Number%20of%20Videos%20per%20Exercise.png)
 *Distribution of videos across different exercise types, showing the class imbalance in the dataset.*
-![Number of Videos per Exercise](/images/overall_duration_distribution.png)
+![overall_duration_distribution](/images/overall_duration_distribution.png)
 
 ## Results
 ### Key Findings
@@ -22,8 +22,12 @@ A deep learning classifier that automatically identifies 22 different workout ex
 - **Robust Learning**: Demonstrated consistent performance across all folds (accuracy range: 91-97%)
 - **Challenging Cases**: Lower accuracy on decline bench press, likely due to limited training samples (only 4 samples per fold)
 
-![Confusion Matrix](/images/confusion_matrix_fold3.png)
+![Confusion Matrix](/images/confusion_matrix.png)
 *Confusion matrix showing model predictions vs actual exercise classes. Darker blue indicates more samples correctly classified.*
+
+![training curves](/images/training_curves.png)
+
+
 ## Technologies Used
 - Python
 - Libraries used (sklearn, tensorflow, etc.)
