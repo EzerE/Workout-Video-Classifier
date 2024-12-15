@@ -8,11 +8,22 @@ A deep learning classifier that automatically identifies 22 different workout ex
 *Distribution of videos across different exercise types, showing the class imbalance in the dataset.*
 ![Number of Videos per Exercise](/images/overall_duration_distribution.png)
 
+## Results
+### Key Findings
+- **High Overall Accuracy**: Achieved 94.28% (±2.18%) accuracy across 5-fold cross-validation
+- **Strong Class Performance**: The model excelled at distinguishing most exercises, with perfect recognition for:
+  - Compound movements (deadlift, squat)
+  - Isolation exercises (leg extension, leg raises)
+  - Bodyweight exercises (push-up, plank)
+- **Common Confusions**: The model occasionally confused:
+  - Barbell biceps curl with tricep pushdown
+  - Bench press variants (regular, incline, and decline)
+  - Similar movement patterns within muscle groups
+- **Robust Learning**: Demonstrated consistent performance across all folds (accuracy range: 91-97%)
+- **Challenging Cases**: Lower accuracy on decline bench press, likely due to limited training samples (only 4 samples per fold)
 
-
-## Key Findings
-[Summary of results]
-
+![Confusion Matrix](/images/confusion_matrix_fold3.png)
+*Confusion matrix showing model predictions vs actual exercise classes. Darker blue indicates more samples correctly classified.*
 ## Technologies Used
 - Python
 - Libraries used (sklearn, tensorflow, etc.)
