@@ -74,7 +74,6 @@ A deep learning classifier that automatically identifies 22 different workout ex
   - Matplotlib & Seaborn: Performance plots
   - IPython: Development interface
 
-Would you like me to adjust this organization or add/remove any details?
 
 ## How to Run
 [Installation and running instructions]
