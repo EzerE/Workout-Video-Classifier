@@ -32,11 +32,11 @@ A deep learning classifier that automatically identifies 22 different workout ex
 ## Methodology & Implementation
 
 ### Data Processing Pipeline
-![Processing Pipeline](/images/processing_new.png)
+![Processing Pipeline](/images/processing%20new.png)
 *Data processing pipeline showing feature engineering steps: from raw video input through frame extraction, pose detection, and feature combination. The pipeline incorporates normalized poses, velocity features, and weighted confidence features.*
 
 ### System Architecture
-![System Architecture](/images/system_architecture.png)
+![System Architecture](/images/model-diagram.png)
 *System architecture overview showing four main components: data preparation, model architecture, training process, and evaluation pipeline.*
 
 ### Model Components
