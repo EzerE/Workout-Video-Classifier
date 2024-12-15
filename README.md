@@ -6,6 +6,9 @@ A deep learning classifier that automatically identifies 22 different workout ex
 
 ![Number of Videos per Exercise](/images/Number%20of%20Videos%20per%20Exercise.png)
 *Distribution of videos across different exercise types, showing the class imbalance in the dataset.*
+![Number of Videos per Exercise](/images/overall_duration_distribution.png)
+
+
 
 ## Key Findings
 [Summary of results]
