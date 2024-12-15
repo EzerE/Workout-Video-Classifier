@@ -4,7 +4,8 @@ Workout Video Classifier usinng CNN-LSTM Model
 ## Overview
 A deep learning classifier that automatically identifies 22 different workout exercises from videos using a CNN-LSTM architecture. Built using a diverse dataset of 652 workout videos, this model is designed to handle real-world challenges including varying video lengths (1-228 seconds), different recording angles, and inconsistent video quality. The project showcases the application of deep learning in fitness technology, processing videos of common exercises like bench press, deadlifts, and biceps curls despite significant variations in how these exercises are recorded.
 
-![Example Visualization](/images/visualization1.png)
+![Number of Videos per Exercise](/images/Number%20of%20Videos%20per%20Exercise.png)
+*Distribution of videos across different exercise types, showing the class imbalance in the dataset.*
 
 ## Key Findings
 [Summary of results]
