@@ -29,11 +29,52 @@ A deep learning classifier that automatically identifies 22 different workout ex
 ![Confusion Matrix](/images/confusion_matrix.png)
 *Confusion matrix showing model predictions vs actual exercise classes. Darker blue indicates more samples correctly classified.*
 
+## Methodology & Implementation
 
+### Data Processing Pipeline
+![Processing Pipeline](/images/processing_new.png)
+*Data processing pipeline showing feature engineering steps: from raw video input through frame extraction, pose detection, and feature combination. The pipeline incorporates normalized poses, velocity features, and weighted confidence features.*
 
-## Technologies Used
-- Python
-- Libraries used (sklearn, tensorflow, etc.)
+### System Architecture
+![System Architecture](/images/system_architecture.png)
+*System architecture overview showing four main components: data preparation, model architecture, training process, and evaluation pipeline.*
+
+### Model Components
+- **Convolutional Layer**
+  - 1D convolution with 64 filters
+  - BatchNormalization and MaxPooling
+  - Dropout for regularization
+- **LSTM Layer**
+  - 128 LSTM units for temporal feature extraction
+  - 64-unit second layer for sequence processing
+  - BatchNormalization and Dropout
+- **Dense Layer**
+  - 64 units with BatchNormalization
+  - Softmax activation for 22-class classification
+
+### Training Configuration
+- Batch size: 16
+- 5-fold cross-validation
+- Class weights to handle imbalanced data
+- Custom callbacks for monitoring and optimization
+
+### Technologies & Libraries
+- **Core Processing**
+  - TensorFlow: Deep learning framework
+  - MediaPipe: Pose estimation and landmark extraction
+  - OpenCV: Video processing and frame extraction
+
+- **Data & Analysis**
+  - NumPy: Numerical computations
+  - Pandas: Data manipulation
+  - Scikit-learn: Cross-validation and metrics
+  - Collections: Data structures
+
+- **Visualization**
+  - Matplotlib & Seaborn: Performance plots
+  - IPython: Development interface
+
+Would you like me to adjust this organization or add/remove any details?
 
 ## How to Run
 [Installation and running instructions]
