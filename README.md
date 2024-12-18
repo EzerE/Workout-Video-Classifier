@@ -78,8 +78,10 @@ A deep learning classifier that automatically identifies 22 different workout ex
 ## How to Run
 [Installation and running instructions]
 
-## Dataset
-The project utilizes the Workout/Fitness Video dataset from Kaggle, comprising 652 short workout videos across 22 exercise categories. The dataset presents several interesting challenges:
+## Dataset Source
+The dataset used in this project is the ["Workout/Fitness Video"](https://www.kaggle.com/datasets/hasyimabdillah/workoutfitness-video) dataset from Kaggle, created by Hasyim Abdillah. It contains 652 workout videos across 22 exercise categories, making it suitable for fitness movement classification tasks.
+
+The dataset presents several interesting challenges:
 
 - **Video Distribution**: The dataset has an uneven distribution of exercises, ranging from 62 videos for barbell biceps curl to 7 videos for plank exercises
 - **Duration Variability**: Videos vary significantly in length
