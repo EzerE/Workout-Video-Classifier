@@ -74,9 +74,45 @@ A deep learning classifier that automatically identifies 22 different workout ex
   - Matplotlib & Seaborn: Performance plots
   - IPython: Development interface
 
+## Repository Structure and Implementation
+
+### Code Organization
+The implementation is divided into three main components:
+
+1. **Data Analysis** (`src/data_analysis/`)
+   - Dataset statistics computation
+   - Data distribution visualization
+   - Quality analysis tools
+
+2. **Preprocessing** (`src/preprocessing/`)
+   - Video frame extraction
+   - Pose detection using MediaPipe
+   - Feature engineering pipeline
+   - Data augmentation
+
+3. **Model Training** (`src/training/`)
+   - CNN-LSTM model implementation
+   - Training configuration
+   - Cross-validation
+   - Performance evaluation
+
+### Running the Project
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/[your-username]/workout-video-classifier
+   cd workout-video-classifier
 
 ## How to Run
-[Installation and running instructions]
+### Prerequisites
+- Python 3.8+
+- Kaggle account (for dataset download)
+- Required libraries: TensorFlow, MediaPipe, OpenCV, etc.
+
+### Dataset Setup
+1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/hasyimabdillah/workoutfitness-video)
+2. Extract the downloaded zip file to the `data` directory:
+   ```bash
+   unzip workout-fitness-video.zip -d data/
 
 ## Dataset Source
 The dataset used in this project is the ["Workout/Fitness Video"](https://www.kaggle.com/datasets/hasyimabdillah/workoutfitness-video) dataset from Kaggle, created by Hasyim Abdillah. It contains 652 workout videos across 22 exercise categories, making it suitable for fitness movement classification tasks.
